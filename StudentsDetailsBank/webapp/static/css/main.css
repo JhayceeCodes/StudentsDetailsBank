@@ -1,0 +1,130 @@
+body {
+    /* Set the background image URL and properties */
+    background-image: url("https://images.unsplash.com/photo-1582139329536-e7284fece509?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJhbmt8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"); /* Adjust the path to your image file */
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjust to your preference (e.g., 'contain' or '100% 100%') */
+    background-position: center center;
+  }
+  
+
+.mylinks{
+    font-size: -9em;
+    color:black;
+    font-weight: 500;
+}
+
+.mylinks p a{
+    color: gold;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.mylinks p a:hover{
+    text-decoration: underline;
+}
+
+
+.text-outline{
+  text-shadow: 2px 2px 3px #000;
+}
+
+.text-outline2{
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+
+.gradient{
+background: linear-gradient(90deg, goldenrod, white, black);
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+font-weight: bold;
+}
+
+/* CSS Code for the Hero Section */
+
+.hero-section {
+background-size: cover;
+background-position: center;
+height: 100vh;
+display: flex;
+align-items: center;
+color: #fff;
+}
+
+.container {
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+.hero-content {
+text-align: center;
+}
+
+.hero-heading {
+font-size: 40px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.hero-subheading {
+font-size: 20px;
+margin-bottom: 30px;
+}
+
+.cta-btn {
+display: inline-block;
+background-color: #FF4500;
+color: #fff;
+font-size: 18px;
+font-weight: bold;
+padding: 15px 30px;
+border-radius: 5px;
+text-decoration: none;
+transition: background-color 0.2s;
+}
+
+.cta-btn:hover {
+background-color: #e48213ef;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav {
+  display: flex;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  background-color: #555;
+}
+
+/* Add responsive styles for small screens */
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 15px 10px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    margin-bottom: 5px;
+    padding: 10px;
+  }
+}
+

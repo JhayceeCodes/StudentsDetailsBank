@@ -1,0 +1,16 @@
+{%extends "base.html"%}
+{%block title%}Update | Students Details Bank{%endblock%}
+{%block content%}
+
+<form action="#" method="post">
+  <div class="form-group">
+    <label for="courses" style="color:black;">Courses</label>
+    <textarea name="courses" class="form-control">{{courses}}</textarea>
+    <label for="others"style="color:black;">Others</label>
+    <textarea name="others" class="form-control">{{others}}</textarea>
+    <br>
+    <input type="submit" name="update" value="UPDATE" style="background-color:black; color:white; border:2px black solid; border-radius:5px;" >
+  </div>
+</form>
+
+{%endblock%}

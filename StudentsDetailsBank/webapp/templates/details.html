@@ -1,0 +1,21 @@
+{%extends "base.html"%}
+{%block title%}Details | Students Details Bank{%endblock%}
+{%block content%}
+<div class="text-warning ">
+<h3 class="pt-2 pb-1 text-light"><b>STUDENT BASIC INFORMATION</b></h3>
+<p><strong class="text-outline">Name:</strong> <em class="text-light text-outline">{{name}}</em></p>
+<p><strong class="text-outline">University:</strong> <em class="text-light text-outline">{{university}}</em></p>
+<p><strong class="text-outline">Campus:</strong> <em class="text-light text-outline">{{campus}}</em></p>
+<p><strong class="text-outline">Faculty:</strong> <em class="text-light text-outline">{{faculty}}</em></p>
+<p><strong class="text-outline">Department:</strong> <em class="text-light text-outline">{{department}}</em></p>
+<p><strong class="text-outline">Matriculation number:</strong> <em class="text-light text-outline">{{matric_number}}</em></p>
+<p><strong class="text-outline">Date of birth:</strong> <em class="text-light text-outline">{{DOB}}</em></p>
+<p><strong class="text-outline">Institutional email: </strong><em class="text-light text-outline">{{Email}}</em></p>
+<p><strong class="text-outline">Courses:</strong> <em class="text-light text-outline">{{courses}}</em></p>
+<p><strong class="text-outline">Other information:</strong> <em class="text-light text-outline">{{others}}</em></p>
+</div>
+<form  action="#" method="post" align="left" >
+<input type="submit" name="update" value="UPDATE" style="border:2px solid black; border-radius:4px; font-family:arial; background-color:goldenrod">
+</form>
+{%endblock%}1
+

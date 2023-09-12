@@ -1,0 +1,31 @@
+{%extends "base.html"%}
+{%block title%}Login | Students Details Bank{%endblock%}
+{%block content%}
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-10">
+              <h3 class="text-center text-light" style="font-weight:500;">Login</h3>
+                <form action="#" method="post">
+                  <div class="form-group">
+                    <label for="matriculation">Matriculation Number</label>
+                    <input type="text" name="matriculation" class="form-control" placeholder="Enter Matriculation number" required>
+                    <br>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password"class="form-control" placeholder="Enter password" required>
+                    <br>
+                    <div align="center">
+                        <button type="submit" name="loginbtn" class="btn btn-secondary" style="background-color:black;">Login</button>
+                        <hr>
+                        <div class="mylinks">
+                        <p><b>Don't have an account yet?</b><a href="/signup" class="text-warning"> Signup</a></p>
+                        </div>
+                    </div>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+{%endblock%}

@@ -1,0 +1,31 @@
+{%extends "base.html"%}
+{%block title%}Signup | Students Details Bank{%endblock%}
+{%block content%}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-lg-10">
+<form action="#" method="post">
+        <h3 class="text-light pt-1 text-center">SIGNUP</h3>
+        <div class="form-group">
+          <label for="name" class="form-label" style="color:black;">Name</label>
+          <input type="text" name="name" class="form-control"  placeholder="Enter your full name" required>
+          <label for="matriculation" class="form-label" style="color:black;">Matriculation number</label>
+          <input type="text" name="matric_number" class="form-control" placeholder="Enter your matric number" required>
+          <label for="password1" class="form-label" style="color:black;">Password</label>
+          <input type="password" name="password1" class="form-control" id="password"placeholder="Enter password" required>
+          <label for="password2" class="form-label" style="color:black;">Re-enter password</label>
+          <input type="password" name="password2" class="form-control" id="password" placeholder="Confirm password" required>
+          <br>
+          <div align="center">
+            <button type="submit" name="registerbtn" class="btn btn-secondary" style="background-color:black;">Save</button>
+          </div>
+        </div>
+  </form>
+      <hr> 
+      <div class="mylinks" align="center">
+        <p><b>Already created an account?</b><a href="/login" class="text-warning"> Login</a></p>
+      </div>
+      </div>
+    </div>
+</div>
+{%endblock%}

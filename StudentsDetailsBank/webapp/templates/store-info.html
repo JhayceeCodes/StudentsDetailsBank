@@ -1,0 +1,34 @@
+{%extends "base.html"%}
+{%block title%}Store-Info | Students Details Bank{%endblock%}
+{%block content%}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-lg-10">
+      <form action="#" method="post">
+          <h3 class="text-light pt-1 text-center">MY BASIC INFORMATION</h3>
+            <div class="form-group">
+              <label for="university_name" class="form-label" style="color:black;">University</label>
+              <input type="text" name="university_name" class="form-control" placeholder="Enter the name of your institution" required>
+              <label for="campus" class="form-label" style="color:black;">Campus</label>
+              <input type="text" name="campus" class="form-control"  placeholder="Enter your campus location" required>
+              <label for="faculty"class="form-label" style="color:black;">Faculty</label>
+              <input type="text" name="faculty" class="form-control"  placeholder="Enter your faculty" required>
+              <label for="department" class="form-label" style="color:black;">Department</label>
+              <input type="text" name="department" class="form-control" placeholder="Enter your department" required>
+              <label for="Email" class="form-label" style="color:black;">Institutional Email</label>
+              <input type="email" name="Email" class="form-control" placeholder="Enter your school email address (allocated to you)" required>             
+              <label for="DOB" class="form-label" style="color:black;">Date of birth</label>
+              <input type="date" class="form-control" name="DOB">
+              <label for="courses" class="form-label"style="color:black;">Courses</label>
+              <textarea name="courses" placeholder="Fill in the courses you are offering here" class="form-control" required></textarea>
+              <label for="others" class="form-label" style="color:black;">Others</label>
+              <textarea name="others"  placeholder="Enter other information you wish to save here" class="form-control"></textarea>
+              <div align="center" class="pt-2 pb-2">
+                <button type="submit" name="registerbtn" class="btn btn-secondary" style="background-color:black;">Save</button>
+              </div>
+            </div> 
+      </form>
+    </div>
+  </div>
+</div>
+{%endblock%}
