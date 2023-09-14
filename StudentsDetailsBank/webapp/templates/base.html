@@ -25,8 +25,12 @@
           <a class="nav-item nav-link me-3" href="/home">Home</a>
           <a class="nav-item nav-link me-3" href="/signup">Signup</a>
           <a class="nav-item nav-link me-3" href="/store-info">Store-Info.</a>
-          <a class="nav-item nav-link me-3" href="/login">Login</a>
-          <a class="nav-item nav-link me-3" href="/logout">Logout</a>
+          {% if not current_user.is_authenticated %} <!-- Check if the user is not authenticated -->
+            <a class="nav-item nav-link me-3" href="/login">Login</a>
+          {% endif %}
+          {% if current_user.is_authenticated %} <!-- Check if the user is authenticated -->
+            <a class="nav-item nav-link me-3" href="/logout">Logged in as {{current_user.name}}|Logout</a>
+          {% endif %}
           <a class="nav-item nav-link me-3" href="/about">About</a>
         </div>
       </div>
