@@ -29,7 +29,7 @@
             <a class="nav-item nav-link me-3" href="/login">Login</a>
           {% endif %}
           {% if current_user.is_authenticated %} <!-- Check if the user is authenticated -->
-            <p>Logged in as {{current_user.name}} | <a class="nav-item nav-link me-3" href="/logout">Logout</a></p>
+            <p class="nav-item me-3">Logged in as {{current_user.name}} | <a class="nav-link" href="/logout">Logout</a></p>
           {% endif %}
           <a class="nav-item nav-link me-3" href="/about">About</a>
         </div>
