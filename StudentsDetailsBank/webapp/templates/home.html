@@ -14,7 +14,11 @@
       <div class="hero-content">
         <h1 class="hero-heading">Stay Organized in Your Academic Journey</h1>
         <p class="hero-subheading">Your one-stop solution to effortlessly manage all your institutional-related details.</p>
-        <a href="/signup" class="cta-btn">Get Started</a>
+        {% if not current_user.info  %}
+            <a href="/signup" class="cta-btn">Get Started</a>
+        {% else %}
+          <a href="/signup" class="cta-btn">Get Started</a>
+        {% endif %}
       </div>
     </div>
   </section>
