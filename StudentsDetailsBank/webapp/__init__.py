@@ -5,6 +5,7 @@ from os import path
 from datetime import timedelta
 import os
 from dotenv import load_dotenv
+from .models import Student, Info
 
 db = SQLAlchemy()
 DB_NAME = "new_database.db"
@@ -29,7 +30,7 @@ def create_app():
     app.register_blueprint(auth, url_prefix="/")
     app.register_blueprint(update, url_prefix="/")
 
-    from .models import Student, Info
+
 
     create_database(app)
 

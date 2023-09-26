@@ -9,8 +9,7 @@ class Student(db.Model,UserMixin):
     name = db.Column(db.String(150), unique=True, nullable=False)
     matric_number = db.Column(db.String(150), unique=True, nullable=False)
     password = db.Column(db.String(150), nullable=False)
-    
-    # One-to-one relationship with the 'Info' model
+     # One-to-one relationship with the 'Info' model
     info = db.relationship('Info', backref='student', uselist=False)
 
 class Info(db.Model):
