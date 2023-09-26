@@ -15,8 +15,8 @@ def create_app():
     app=Flask(__name__, template_folder="templates")
     #app.permanent_session_lifetime = timedelta(minutes=5)
     app.config["SQLALCHEMY_DATABASE_URI"] = f"sqlite:///{DB_NAME}"
-    #YOU CAN ALSO CHOOSE CONNECT TO A MYSQL DATABASE IN THE FORMAT BELOW
     #app.config["SQLALCHEMY_DATABASE_URI"]= f"mysql+pymysql://username:yourmysqlpassword@host/database"
+    #^^^optional if you wish to use mysql
     app.secret_key: str = os.getenv("SECRET_KEY") # here i used an environment variable to store my secret key, so you can create one and utilize in the same manner...
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
