@@ -1,4 +1,4 @@
-# StudentsDetailsBank...Flask
+# StudentsDetailsBank
 ## A webapp for storing essential school-related information
 
 
